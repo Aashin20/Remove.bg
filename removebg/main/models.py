@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 
 class Remove(models.Model):
     Original_img = models.ImageField(upload_to="E:\Projects\Liftoff\Remove.bg\Remove.bg\removebg\Static\Uploads\Original")
