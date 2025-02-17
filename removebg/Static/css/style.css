@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.upload-container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.upload-box {
+    margin-top: 2rem;
+}
+
+.file-input-container {
+    margin: 2rem 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-input {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.custom-file-input:hover {
+    background-color: #2980b9;
+}
+
+.submit-btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #27ae60;
+}
+
+#preview-container {
+    margin: 2rem 0;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 5px;
+}
+
+.result-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.image-comparison {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.original-image, .processed-image {
+    flex: 1;
+    text-align: center;
+}
+
+.original-image img, .processed-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.download-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.download-btn, .new-image-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.download-btn {
+    background-color: #2ecc71;
+}
+
+.new-image-btn {
+    background-color: #3498db;
+}
+
+.download-btn:hover {
+    background-color: #27ae60;
+}
+
+.new-image-btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
