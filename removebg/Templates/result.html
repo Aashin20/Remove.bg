@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="result-container">
+    <h2>Background Removed Successfully!</h2>
+    <div class="image-comparison">
+        <div class="original-image">
+            <h3>Original Image</h3>
+            <img src="{{ original_image_url }}" alt="Original Image">
+        </div>
+        <div class="processed-image">
+            <h3>Processed Image</h3>
+            <img src="{{ processed_image_url }}" alt="Processed Image">
+        </div>
+    </div>
+    <div class="download-section">
+        <a href="{{ processed_image_url }}" download class="download-btn">Download Image</a>
+        <a href="{% url 'upload' %}" class="new-image-btn">Remove Another Background</a>
+    </div>
+</div>
+{% endblock %}
